@@ -1,0 +1,94 @@
+html,body
+{
+	margin:0;
+	padding:0;
+}
+body 
+{
+	font: 16px 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+	background-image:url("../img/bg.png");
+}
+a
+{
+	text-decoration: none;
+}
+img
+{
+	border: none;
+}
+@font-face
+{
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  src:	url("fonts/fontawesome-webfont.eot?v=#4.0.3");
+  src: 	url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), 
+		url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), 
+		url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), 
+		url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
+.container 
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	height:100%;
+	position: relative;
+}
+.logo {
+  width: 94px;
+  height: 57px;
+  background-image: url("../img/logo.png");
+  -webkit-background-size: 74px 28px;
+  -moz-background-size: 74px 28px;
+  background-size: 74px 28px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-left:auto;
+}
+#logo {
+  float: left;
+}
+.header {
+	font-size: 14px;
+	position: relative;
+	background: #66c3bc;
+	-webkit-box-shadow: 0 5px 10px #bdc5c4;
+	box-shadow: 0 5px 10px #bdc5c4;
+}
+#header-outer {
+  height: 100%;
+  position: relative;
+  text-align:center;
+}
+#header-inner {
+  position: relative;
+  overflow: hidden;
+  display:inline-block;
+}
+.outer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#main-nav {
+  float: left;
+  margin-left: -15px;
+  margin-right:auto;
+}
+.main-nav-link
+{
+  float: left;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  display: block;
+  padding: 20px 15px;
+  font-weight: 600;
+  color: #666;
+  font-size: 16px;
+  padding: 20px 14px;
+}
+
