@@ -3,8 +3,8 @@ var express = require('express');
 var app = express();  
   
 app.set('views', __dirname + '/views');  
-app.engine('html', require('ejs').renderFile);
-app.use(app.router);  
+app.set('view engine', 'ejs');  
+//app.engine('ejs', require('ejs').renderFile);
 app.use(express.static(__dirname + '/content')); 
 
 // url路由  
