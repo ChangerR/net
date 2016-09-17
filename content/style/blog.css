@@ -51,8 +51,9 @@ img
 }
 .header {
 	font-size: 14px;
+	margin-top: 10px;
 	position: relative;
-	background: #66c3bc;
+	background: #00EEEE;
 	-webkit-box-shadow: 0 5px 10px #bdc5c4;
 	box-shadow: 0 5px 10px #bdc5c4;
 }
@@ -91,4 +92,16 @@ img
   font-size: 16px;
   padding: 20px 14px;
 }
-
+.main {
+	top:20px;
+	position:relative;
+}
+.summary {
+	position:relative;
+	top:20px;
+	background-image:-webkit-linear-gradient(#F0F0F0,#EEEEEE);
+	width:75%;
+	height:200px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow: 0 5px 10px #bdc5c4;
+}
