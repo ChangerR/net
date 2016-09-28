@@ -153,3 +153,42 @@ img
 	font-style:italic;
 	color:#333333;
 }
+.summary-head {
+	position:relative;
+	margin: 0 5%;
+	height:16%;
+	border-bottom:1px solid rgb(220,220,220);
+	padding-top:1px;
+	padding-bottom:1px;
+}
+
+.summary-head a {
+	/*margin-top:10px;*/
+	position:absolute;
+	bottom:0px;
+	height:80%;
+	color:#000000;
+	font:bold 15px/1.5em 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+}
+.summary-content {
+	height:54%;
+	margin:0 5%;
+	margin-bottom:1em;
+	overflow-y:hidden;
+}
+.summary-content p {
+	font:normal 12px Arial;
+	color:#666666;
+	text-indent:2em;
+}
+.summary-footer {
+	position:relative;
+	border-top:1px solid rgb(220,220,220);
+	margin:0 5%;
+	text-align:right;
+}
+.summary-footer a {
+	color:#888888;
+	margin:0 2em;
+	font-size:12px;
+}
