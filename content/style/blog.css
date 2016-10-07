@@ -27,11 +27,29 @@ img
 		url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), 
 		url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-angle-right:before {
+  content: "\f101";
+  color:rgb(128,128,128);
+  font-size:16px;
+}
+.fa-angle-left:before {
+	content:"\f100";
+	color:rgb(128,128,128);
+	font-size:16px;
+}
 .container 
 {
 	margin-left:auto;
 	margin-right:auto;
-	width:960px;
+	width:1024px;
 	height:100%;
 	position: relative;
 }
@@ -45,6 +63,7 @@ img
   background-position: left center;
   background-repeat: no-repeat;
   margin-left:auto;
+  padding:0 16px;
 }
 #logo {
   float: left;
@@ -53,7 +72,7 @@ img
 	font-size: 14px;
 	margin-top: 10px;
 	position: relative;
-	background: #00EEEE;
+	background: #e0aa11;
 	-webkit-box-shadow: 0 5px 10px #bdc5c4;
 	box-shadow: 0 5px 10px #bdc5c4;
 }
@@ -68,7 +87,7 @@ img
   display:inline-block;
 }
 .outer {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
 }
 #main-nav {
@@ -90,7 +109,7 @@ img
   font-weight: 600;
   color: #666;
   font-size: 16px;
-  padding: 20px 14px;
+  padding: 20px 18px;
 }
 .main {
 	position:relative;
@@ -105,6 +124,22 @@ img
 	-webkit-box-shadow: 0 5px 10px #bdc5c4;
 
 }
+.nav-caption {
+	margin:20px 20px 0 20px;
+	height:auto;
+	background-color:#ffffff;
+}
+.nav-caption-block {
+	list-style-type:none;
+	margin:0 1em;
+	padding:0.4em 0;
+}
+.nav-caption-block a {
+	display:inline;
+	margin:0 1em;
+	font:normal 16px Helvetica,'华文中宋', 'Microsoft Yahei', serif;
+	color:rgb(128,128,128);
+}
 .main .content {
 	margin-left:20px;
 	margin-bottom:20px;
@@ -112,21 +147,15 @@ img
 	clear:left;
 	width:74%;
 }
+.main .document {
+	margin:20px;
+	background:#ffffff;
+}
 .summary {
 	margin-top:20px;
 	background-color:#ffffff;
 	width:100%;
 	height:200px;
-	-webkit-border-radius:5px;
-}
-.describe {
-	float:right;
-	clear:right;
-	margin-right:20px;
-	width:20%;
-	margin-top:20px;
-	background-color:#ffffff;
-	height:420px;
 	-webkit-border-radius:5px;
 }
 .history {
@@ -136,7 +165,7 @@ img
 	width:20%;
 	margin-top:20px;
 	background-color:#ffffff;
-	height:420px;
+	min-height:1300px;
 	-webkit-border-radius:5px;
 }
 .footer {
@@ -156,7 +185,7 @@ img
 .summary-head {
 	position:relative;
 	margin: 0 5%;
-	height:16%;
+	height:20%;
 	border-bottom:1px solid rgb(220,220,220);
 	padding-top:1px;
 	padding-bottom:1px;
@@ -167,17 +196,17 @@ img
 	position:absolute;
 	bottom:0px;
 	height:80%;
-	color:#000000;
-	font:bold 15px/1.5em 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
+	color:#222222;
+	font:normal 16px/1.5em Helvetica,'华文中宋', 'Microsoft Yahei', serif;
 }
 .summary-content {
-	height:54%;
+	height:57%;
 	margin:0 5%;
 	margin-bottom:1em;
 	overflow-y:hidden;
 }
 .summary-content p {
-	font:normal 12px Arial;
+	font:normal 14px Verdana,Arial,Helvetica,sans-serif;
 	color:#666666;
 	text-indent:2em;
 }
@@ -188,7 +217,57 @@ img
 	text-align:right;
 }
 .summary-footer a {
-	color:#888888;
-	margin:0 2em;
+	margin:0 1.2em;
 	font-size:12px;
+}
+.label_normal {
+	color:#888888;
+}
+.label_green {
+	color:#2ed62e;
+}
+.label_blue {
+	color:#0a0ace;
+}
+.history div {
+	margin:0 20px;
+	overflow:hidden;
+}
+.history-title {
+	font:italic 16px/2.3em Verdana,Arial,Helvetica,sans-serif;
+	color:#010101;
+	margin:5px;
+	border-bottom:1px solid rgb(220,220,220);
+	display:block;
+}
+.history-content{
+	font:normal 14px Verdana,Arial;
+	color:#399ab2;
+	margin-top:0.5em;
+	display:block;
+}
+.history-sign {
+	font:normal 11px Verdana,Arial;
+	color:rgb(200,200,200);
+	margin:15px 20px;
+}
+.rotate {
+	clear:both;
+	margin:20px;
+	height:auto;
+	font:normal 16px Helvetica,'华文中宋', 'Microsoft Yahei', serif;
+	color:rgb(128,128,128);
+	text-align:center;
+}
+.rotate a {
+	color:inherit;
+}
+.rotate .rotate-up {
+	float:left;
+}
+.rotate .rotate-down {
+	float:right;
+}
+.rotate > span a {
+	margin:2em;
 }

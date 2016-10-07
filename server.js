@@ -13,5 +13,10 @@ app.get('/', function(req, res){
     title: 'Blog'  
   });  
 });  
+app.get('/document',function(req,res) {
+	res.render('doc', {
+		title: 'document'
+	})
+});
   
 app.listen(8090); 
