@@ -53,6 +53,10 @@ img
 	height:100%;
 	position: relative;
 }
+.invisiable
+{
+	visibility:hidden;
+}
 .logo {
   width: 94px;
   height: 57px;
@@ -270,4 +274,17 @@ img
 }
 .rotate > span a {
 	margin:2em;
+}
+#markdown {
+	margin:0 20px;
+	background:#ffffff;
+	border-top: 1px solid rgb(129,129,129);
+}
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+	min-height:600px;
+    margin: 0 auto;
+	padding:15px
 }
